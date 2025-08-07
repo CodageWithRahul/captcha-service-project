@@ -29,8 +29,11 @@ Requirements:
 There are two ways to run this project:
 
 Option 1: Using WAR File (Recommended)
+
 This is the easiest way to deploy and test the CAPTCHA service.
+
 Steps:
+
   - Go to the Releases section of the repository.
   - Download the CaptchaService.war file.
   - Copy the WAR file to the webapps directory of Apache Tomcat v9.0.
@@ -43,6 +46,7 @@ Steps:
 
 
 Option 2: Run from Eclipse (For Development & Testing)
+
   If you prefer to run and test the project directly from your IDE:
 
 Prerequisites:
@@ -51,21 +55,22 @@ Prerequisites:
   - Eclipse IDE for Enterprise Java Developers
 
 Steps:
-  Import the Project:
-    - Open Eclipse.
-    - Go to File → Import → Existing Maven Projects.
-    - Browse to your project folder (captcha-service-project) and click Finish.
-  Set the Target Runtime:
-    - Right-click the project → Properties → Targeted Runtimes.
-    - Select Apache Tomcat v9.0.
-  Add Tomcat Server:
-    - In Servers tab → New → Server → Apache → Tomcat v9.0.
-    - Choose the same Tomcat installation directory.
-  Run the Project:
-    - Right-click on the project → Run As → Run on Server.
-  Access the Web App:
-    - Once deployed, open your browser and visit:
-        http://localhost:8080/CaptchaService
+
+Import the Project:
+  - Open Eclipse.
+  - Go to File → Import → Existing Maven Projects.
+  - Browse to your project folder (captcha-service-project) and click Finish.
+Set the Target Runtime:
+  - Right-click the project → Properties → Targeted Runtimes.
+  - Select Apache Tomcat v9.0.
+Add Tomcat Server:
+  - In Servers tab → New → Server → Apache → Tomcat v9.0.
+  - Choose the same Tomcat installation directory.
+Run the Project:
+  - Right-click on the project → Run As → Run on Server.
+Access the Web App:
+  - Once deployed, open your browser and visit:
+      http://localhost:8080/CaptchaService
 ---
 
 ## Use Case
