@@ -29,8 +29,8 @@ Requirements:
 There are two ways to run this project:
 
 Option 1: Using WAR File (Recommended)
-  This is the easiest way to deploy and test the CAPTCHA service.
-  Steps:
+This is the easiest way to deploy and test the CAPTCHA service.
+Steps:
   - Go to the Releases section of the repository.
   - Download the CaptchaService.war file.
   - Copy the WAR file to the webapps directory of Apache Tomcat v9.0.
@@ -38,7 +38,7 @@ Option 1: Using WAR File (Recommended)
       Higher versions (like v10+) may cause compatibility issues due to the javax.servlet package changes.
   - Start the Tomcat server.
   - Open your browser and navigate to:
-      http://localhost:8080/captcha-service
+      http://localhost:8080/CaptchaService
 
 
 
@@ -65,7 +65,7 @@ Steps:
     - Right-click on the project → Run As → Run on Server.
   Access the Web App:
     - Once deployed, open your browser and visit:
-      http://localhost:8080/captcha-service
+        http://localhost:8080/CaptchaService
 
 
 ## Use Case
