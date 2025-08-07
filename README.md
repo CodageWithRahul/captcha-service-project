@@ -2,24 +2,26 @@
 A secure and reusable CAPTCHA service built with Java Servlets to generate and validate CAPTCHA images for any web application.
 
 ## Developed By
+
 Rahul Gupta  
 BCA Student, Amity University Online  
----
+
 ## Technologies Used
+
 - Java 8  
 - Servlet API  
 - Apache Tomcat Server v9.0
 - Eclipse IDE  
 - HTML5, CSS3, JS
----
 
 ## Features
+
 - Dynamic CAPTCHA image generation**
 - One randomly rotated character** for enhanced security
 - No exposure of original CAPTCHA text to frontend**
 - Backend-only validation logic**
 - Integrated with a secure user data collection form**
----
+
 ## How to Run
 
 Requirements:
