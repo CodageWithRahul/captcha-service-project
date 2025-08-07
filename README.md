@@ -8,7 +8,7 @@ BCA Student, Amity University Online
 ## Technologies Used
 - Java 8  
 - Servlet API  
-- Apache Tomcat Server  
+- Apache Tomcat Server v9.0
 - Eclipse IDE  
 - HTML5, CSS3, JS
 
