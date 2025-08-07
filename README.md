@@ -10,7 +10,7 @@ BCA Student, Amity University Online
 - Servlet API  
 - Apache Tomcat Server  
 - Eclipse IDE  
-- HTML5, CSS3
+- HTML5, CSS3,JS
 
 
 ## Features
@@ -28,7 +28,7 @@ Option 1: Using WAR file (Recommended)
 - Copy the captcha-service.war file to the webapps folder of Apache Tomcat.
 - Start Tomcat.
 - Open your browser and visit:
-- http://localhost:8080/captcha-service
+- #http://localhost:8080/captcha-service
 
 Option 2: Run from Source Code
 - Import the project in Eclipse (or any Java IDE).
