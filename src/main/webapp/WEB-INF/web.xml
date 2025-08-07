@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- Default welcome file when accessing the root URL -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- Servlet configuration for generating CAPTCHA -->
+    <servlet>
+        <servlet-name>GenerateCaptcha</servlet-name>
+        <servlet-class>com.captcha.service.GenerateCaptchaServlet</servlet-class>
+    </servlet>
+
+    <!-- URL mapping for the GenerateCaptcha servlet -->
+    <servlet-mapping>
+        <servlet-name>GenerateCaptcha</servlet-name>
+        <url-pattern>/generate</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet configuration for validating CAPTCHA input -->
+    <servlet>
+        <servlet-name>ValidateCaptcha</servlet-name>
+        <servlet-class>com.captcha.service.ValidateCaptchaServlet</servlet-class>
+    </servlet>
+
+    <!-- URL mapping for the ValidateCaptcha servlet -->
+    <servlet-mapping>
+        <servlet-name>ValidateCaptcha</servlet-name>
+        <url-pattern>/validate</url-pattern>
+    </servlet-mapping>
+
+</web-app>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CAPTCHA Form</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+	<div class="form-container">
+		<h2>Secure Form</h2>
+		<form id="captchaForm">
+			<input type="text" name="fullname" required placeholder="Full Name">
+			<input type="email" name="email" required placeholder="Email-ID">
+			<input type="tel" name="phone" required placeholder="Phone Number">
+			<input type="text" name="address" required placeholder="Address">
+
+			<div class="imgDiv">
+				<img id="captcha" src="" alt="CAPTCHA" /> <img id="reloadImg"
+					alt="reload" src="img/reload.jpg" onClick="loadCaptcha()" />
+			</div>
+			<div id="captcha-info" class="tooltip-box,hidden-info">
+				Note: <span class="tooltip-icon"> One letter may be rotated <b>ℹ️</b>
+					<div class="tooltip-content">
+						To improve security,<br> one uppercase character<br>
+						may be rotated or flipped.<br>E.g., A → <span class="flipped-letter">A</span>
+						
+					</div>
+				</span>
+			</div>
+			<input type="text" name="captcha_input" id="capInput"
+				placeholder="Enter 5 letter CAPTCHA shown above" required
+				maxlength="5"> <input type="hidden" name="captcha_id"
+				id="captcha_id">
+			<div id="result" class="resultMsg"></div>
+
+			<button type="submit">Submit</button>
+		</form>
+		<div class="footer">Powered by Rahul's CAPTCHA Service</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
