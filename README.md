@@ -1,4 +1,4 @@
-# captcha-service-project
+# Captcha-service-project
 A secure and reusable CAPTCHA service built with Java Servlets to generate and validate CAPTCHA images for any web application.
 
 ## Developed By
@@ -21,20 +21,52 @@ BCA Student, Amity University Online
 - Integrated with a secure user data collection form**
 
 ## How to Run
+
+Requirements:
+  - Java 8 or above
+  - Apache Tomcat v9.0.x (Do not use Tomcat 10 or above)
+
 There are two ways to run this project:
 
-Option 1: Using WAR file (Recommended)
-- Go to the release folder.
-- Copy the captcha-service.war file to the webapps folder of Apache Tomcat.
-- Start Tomcat.
-- Open your browser and visit:
-- http://localhost:8080/captcha-service
+Option 1: Using WAR File (Recommended)
+  This is the easiest way to deploy and test the CAPTCHA service.
+  Steps:
+  - Go to the Releases section of the repository.
+  - Download the CaptchaService.war file.
+  - Copy the WAR file to the webapps directory of Apache Tomcat v9.0.
+      Make sure you're using Tomcat v9.0.x.
+      Higher versions (like v10+) may cause compatibility issues due to the javax.servlet package changes.
+  - Start the Tomcat server.
+  - Open your browser and navigate to:
+      http://localhost:8080/captcha-service
 
-Option 2: Run from Source Code
-- Import the project in Eclipse (or any Java IDE).
-- Add Apache Tomcat as the server.
-- Deploy the project.
-- Run the server and open the form page in your browser.
+
+
+Option 2: Run from Eclipse (For Development & Testing)
+  If you prefer to run and test the project directly from your IDE:
+
+Prerequisites:
+  - Java 8 or above
+  - Apache Tomcat v9.0 configured in Eclipse
+  - Eclipse IDE for Enterprise Java Developers
+
+Steps:
+  Import the Project:
+    - Open Eclipse.
+    - Go to File → Import → Existing Maven Projects.
+    - Browse to your project folder (captcha-service-project) and click Finish.
+  Set the Target Runtime:
+    - Right-click the project → Properties → Targeted Runtimes.
+    - Select Apache Tomcat v9.0.
+  Add Tomcat Server:
+    - In Servers tab → New → Server → Apache → Tomcat v9.0.
+    - Choose the same Tomcat installation directory.
+  Run the Project:
+    - Right-click on the project → Run As → Run on Server.
+  Access the Web App:
+    - Once deployed, open your browser and visit:
+      http://localhost:8080/captcha-service
+
 
 ## Use Case
 This CAPTCHA service can be integrated with any basic web form to prevent spam or bot submissions.
