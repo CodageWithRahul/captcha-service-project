@@ -83,3 +83,6 @@ Where it can be used:
 - Login pages for extra protection (if needed)
 - Feedback or suggestion forms to make sure real users are submitting
 - Any basic form where you want to check if a human is using it
+
+<img width="296" height="85" alt="captcha_img" src="https://github.com/user-attachments/assets/933f2ac3-3d4f-4aab-8d06-afed78eaa119" />
+
